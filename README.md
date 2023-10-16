@@ -5,6 +5,7 @@ Summary
 -------
 You can find here a list of the main features of this boilerplate:
 - [TypeScript](https://www.typescriptlang.org/) support.
+- [TS-Node](https://typestrong.org/ts-node/) support.
 - [EsLint](https://eslint.org/) support (already configured).
 - [Winston](https://github.com/winstonjs/winston) logger boilerplate.
 - [dotenv](https://github.com/motdotla/dotenv) support (don't forget to config load early in the app).
