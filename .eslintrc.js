@@ -1,6 +1,7 @@
 module.exports = {
     plugins: [
         "@typescript-eslint",
+        "prefer-arrow",
         "import"
     ],
     extends: [
@@ -10,7 +11,6 @@ module.exports = {
     ],
     parser: "@typescript-eslint/parser",
     parserOptions: {
-        ecmaFeatures: {},
         ecmaVersion: "latest",
         sourceType: "module"
     },
@@ -96,6 +96,14 @@ module.exports = {
             "warn",
             {
                 count: 2
+            }
+        ],
+        "prefer-arrow/prefer-arrow-functions": [
+            "warn",
+            {
+                disallowPrototype: true,
+                singleReturnOnly: false,
+                classPropertiesAllowed: true
             }
         ]
     }
