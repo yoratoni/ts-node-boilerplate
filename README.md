@@ -1,14 +1,17 @@
-# TS-Node Boilerplate
-A TS-Node & EsLint boilerplate entirely configured to suit my standards.
+# TSX Boilerplate
+A TSX & EsLint boilerplate entirely configured to suit my standards.
 
 Summary
 -------
 You can find here a list of the main features of this boilerplate:
 - [TypeScript](https://www.typescriptlang.org/) support.
-- [TS-Node](https://typestrong.org/ts-node/) support.
+- [TSX](https://github.com/esbuild-kit/tsx) support.
 - [EsLint](https://eslint.org/) support (already configured).
 - [Winston](https://github.com/winstonjs/winston) logger boilerplate.
-- [dotenv](https://github.com/motdotla/dotenv) support (don't forget to config load early in the app).
+- [Minimist](https://github.com/minimistjs/minimist) support.
+- [Dedent-JS](https://github.com/MartinKolarik/dedent-js) support.
+- [Date-and-time](https://www.npmjs.com/package/date-and-time) support.
+- [DotEnv](https://github.com/motdotla/dotenv) support (don't forget to config load early in the app).
 
 Here's the list of the main EsLint rules:
 - **[ERROR]** UNIX linebreaks.
