@@ -1,8 +1,8 @@
 {
-    "name": "ts-node-boilerplate",
+    "name": "tsx-boilerplate",
     "version": "1.0.0",
-    "description": "TS-NODE BOILERPLATE",
-    "repository": "https://github.com/yoratoni/ts-node-boilerplate",
+    "description": "TSX BOILERPLATE",
+    "repository": "https://github.com/yoratoni/tsx-boilerplate",
     "author": "yoratoni <yoratoni.dev@gmail.com>",
     "license": "MIT",
     "private": true,
