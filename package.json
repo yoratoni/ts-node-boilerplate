@@ -1,7 +1,7 @@
 {
     "name": "ts-node-boilerplate",
     "version": "1.0.0",
-    "description": "TS Node BOILERPLATE",
+    "description": "TS-Node Boilerplate",
     "repository": "https://github.com/yoratoni/ts-node-boilerplate",
     "author": "yoratoni <yoratoni.dev@gmail.com>",
     "license": "MIT",
