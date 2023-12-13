@@ -1,7 +1,6 @@
 module.exports = {
     plugins: [
         "@typescript-eslint",
-        "prefer-arrow",
         "import"
     ],
     extends: [
@@ -23,36 +22,27 @@ module.exports = {
                 "alwaysTryTypes": true,
                 "project": "./tsconfig.json"
             }
-        },
+        }
     },
     rules: {
+        // General
         "indent": "off",
-        "@typescript-eslint/indent": [
-            "warn",
-            4,
-            {
-                "SwitchCase": 1
-            }
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "warn",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ],
-        "object-curly-spacing": [
-            "warn",
-            "always"
-        ],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["warn", "double"],
+        "semi": ["error", "always"],
+        "object-curly-spacing": ["warn", "always"],
         "no-unused-vars": "off",
+        "arrow-body-style": ["warn", "as-needed"],
+        "import/no-unresolved": "error",
+
+        // TypeScript
+        "@typescript-eslint/indent": ["warn", 4, { "SwitchCase": 1 }],
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/no-unused-vars": "warn",
+
+        // Imports
+        "import/no-useless-path-segments": ["warn", { noUselessIndex: true }],
+        "import/newline-after-import": ["warn", { count: 2 }],
         "sort-imports": [
             "warn",
             {
@@ -63,7 +53,6 @@ module.exports = {
                 allowSeparatedGroups: true
             }
         ],
-        "import/no-unresolved": "error",
         "import/order": [
             "warn",
             {
@@ -80,30 +69,6 @@ module.exports = {
                     order: "asc",
                     caseInsensitive: true
                 }
-            }
-        ],
-        "import/no-useless-path-segments": [
-            "warn",
-            {
-                noUselessIndex: true
-            }
-        ],
-        "arrow-body-style": [
-            "warn",
-            "as-needed"
-        ],
-        "import/newline-after-import": [
-            "warn",
-            {
-                count: 2
-            }
-        ],
-        "prefer-arrow/prefer-arrow-functions": [
-            "warn",
-            {
-                disallowPrototype: true,
-                singleReturnOnly: false,
-                classPropertiesAllowed: true
             }
         ]
     }

@@ -1,11 +1,11 @@
-# TSX Boilerplate
-A TSX & EsLint boilerplate entirely configured to suit my standards.
+# TS Node Boilerplate
+A TS Node & EsLint boilerplate entirely configured to suit my standards.
 
 Summary
 -------
 You can find here a list of the main features of this boilerplate:
 - [TypeScript](https://www.typescriptlang.org/) support.
-- [TSX](https://github.com/esbuild-kit/tsx) support.
+- [TS Node](https://github.com/TypeStrong/ts-node) support.
 - [EsLint](https://eslint.org/) support (already configured).
 - [Winston](https://github.com/winstonjs/winston) logger boilerplate.
 - [Minimist](https://github.com/minimistjs/minimist) support.

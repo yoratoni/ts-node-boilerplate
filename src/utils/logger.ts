@@ -1,11 +1,11 @@
 import { createLogger, format, transports } from "winston";
 
-import GLOBAL_CONFIG from "configs/global.config";
+import GENERAL_CONFIG from "configs/general.config";
 
 
 const loggerFormat = format.combine(
     format.timestamp({
-        format: GLOBAL_CONFIG.dateFormat
+        format: GENERAL_CONFIG.dateFormat
     }),
     format.printf((info) => `[${info.timestamp}] [${info.level.toUpperCase()}] ${info.message}`),
     format.colorize({
@@ -20,9 +20,9 @@ const logger = createLogger({
     format: loggerFormat,
     transports: [
         new transports.Console({
-            level: GLOBAL_CONFIG.verbose ? "silly" : "info"
+            level: GENERAL_CONFIG.verbose ? "silly" : "info"
         })
-    ],
+    ]
 });
 
 
