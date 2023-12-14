@@ -20,4 +20,3 @@ Here's the list of the main EsLint rules:
 - **[WARN]** Two new lines after imports.
 - **[WARN]** No unused variables.
 - **[WARN]** EsLint sorted imports (auto-sorted with VSCode).
-- **[WARN]** Prefer arrow functions.
