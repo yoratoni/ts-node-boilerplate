@@ -1,7 +1,7 @@
 {
     "name": "ts-node-boilerplate",
     "version": "1.0.0",
-    "description": "TS-Node Boilerplate",
+    "description": "A TS-Node & EsLint boilerplate entirely configured to suit my standards.",
     "repository": "https://github.com/yoratoni/ts-node-boilerplate",
     "author": "yoratoni <yoratoni.dev@gmail.com>",
     "license": "MIT",
