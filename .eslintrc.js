@@ -42,7 +42,7 @@ module.exports = {
 
         // Imports
         "import/no-useless-path-segments": ["warn", { noUselessIndex: true }],
-        "import/newline-after-import": ["warn", { count: 2 }],
+        "import/newline-after-import": ["warn", { count: 2, considerComments: true }],
         "sort-imports": [
             "warn",
             {
