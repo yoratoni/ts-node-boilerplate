@@ -1,5 +1,6 @@
 {
     "name": "ts-node-boilerplate",
+    "productName": "TS-Node Boilerplate",
     "version": "1.0.0",
     "description": "A TS-Node & EsLint boilerplate entirely configured to suit my standards.",
     "repository": "https://github.com/yoratoni/ts-node-boilerplate",
