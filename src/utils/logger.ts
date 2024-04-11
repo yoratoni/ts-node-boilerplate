@@ -1,16 +1,27 @@
+import type { TransformableInfo } from "logform";
 import { createLogger, format, transports } from "winston";
 
-import GENERAL_CONFIG from "configs/general.config";
 
+/**
+ * A simple printf function for Winston,
+ * indenting new lines with the loggerIndent.
+ * @param info The log info.
+ * @returns The formatted log message.
+ */
+function printf(info: TransformableInfo) {
+    return `[${info.timestamp}] ${info.message}`.replace(
+        /\n/g,
+        `\n${" ".repeat(11)}`
+    );
+}
 
+/**
+ * Logger format.
+ */
 const loggerFormat = format.combine(
-    format.timestamp({
-        format: GENERAL_CONFIG.dateFormat
-    }),
-    format.printf((info) => `[${info.timestamp}] [${info.level.toUpperCase()}] ${info.message}`),
-    format.colorize({
-        all: true
-    })
+    format.timestamp({ format: "HH:mm:ss" }),
+    format.printf(printf),
+    format.colorize({ all: true })
 );
 
 /**
@@ -19,9 +30,7 @@ const loggerFormat = format.combine(
 const logger = createLogger({
     format: loggerFormat,
     transports: [
-        new transports.Console({
-            level: GENERAL_CONFIG.verbose ? "silly" : "info"
-        })
+        new transports.Console({ level: "silly" })
     ]
 });
 
