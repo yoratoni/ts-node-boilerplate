@@ -35,6 +35,7 @@ module.exports = {
         "arrow-body-style": ["warn", "as-needed"],
         "import/no-unresolved": "error",
         "comma-dangle": ["error", "never"],
+        "no-param-reassign": "warn",
 
         // TypeScript
         "@typescript-eslint/consistent-type-imports": "error",
