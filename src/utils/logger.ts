@@ -1,6 +1,5 @@
-import type { TransformableInfo } from "logform";
-import { createLogger, format, transports } from "winston";
-
+import type { TransformableInfo } from "logform"
+import { createLogger, format, transports } from "winston"
 
 /**
  * A simple printf function for Winston,
@@ -9,30 +8,24 @@ import { createLogger, format, transports } from "winston";
  * @returns The formatted log message.
  */
 function printf(info: TransformableInfo) {
-    return `[${info.timestamp}] ${info.message}`.replace(
-        /\n/g,
-        `\n${" ".repeat(11)}`
-    );
+	return `[${info.timestamp}] ${info.message}`.replace(/\n/g, `\n${" ".repeat(11)}`)
 }
 
 /**
  * Logger format.
  */
 const loggerFormat = format.combine(
-    format.timestamp({ format: "HH:mm:ss" }),
-    format.printf(printf),
-    format.colorize({ all: true })
-);
+	format.timestamp({ format: "HH:mm:ss" }),
+	format.printf(printf),
+	format.colorize({ all: true }),
+)
 
 /**
  * Main Winston logger instance.
  */
 const logger = createLogger({
-    format: loggerFormat,
-    transports: [
-        new transports.Console({ level: "silly" })
-    ]
-});
+	format: loggerFormat,
+	transports: [new transports.Console({ level: "silly" })],
+})
 
-
-export default logger;
+export default logger
